@@ -89,7 +89,7 @@ st.title('Diabete predicting Web App')
 st.caption(
     "This is a web app to predict diabetes based on several features that you can see in the _italics_: red[sidebar].Please adjust the value of each feature. After that, click on the Predict button at the bottom to see the prediction of the classifier.")
 
-tab1, tab2, tab3 = st.tabs(["Random Forest", "XGBoost", "dataset overview"])
+tab1, tab2, tab3, tab4 = st.tabs(["Random Forest", "XGBoost", "dataset overview", "author"])
 features, sidebars = get_features_df()
 features_df = pd.DataFrame([features])
 
@@ -99,8 +99,8 @@ with tab1:
     st.table(features_df)
     if st.button('Predict by RandomForest'):
         prediction = predict_quality(rf_model, features_df)
-        st.header(
-            ' _italics_: blue[Based on feature values, your patient has diabets probability: ]' + str(prediction))
+        st.title(
+            'Based on feature values, your patient has diabets probability:' + str(prediction))
 
 with tab2:
     st.write(
@@ -108,8 +108,8 @@ with tab2:
     st.table(features_df)
     if st.button('Predict by XGBoost'):
         prediction = predict_quality(xg_model, features_df)
-        st.header(
-            ' _italics_: blue[Based on feature values, your patient has diabets probability: ]' + str(prediction))
+        st.title(
+            'Based on feature values, your patient has diabets probability:' + str(prediction))
 
 with tab3:
     dataset = pd.read_csv('diabetes.csv')
@@ -117,3 +117,8 @@ with tab3:
     st.table(features_info())
     st.caption("dataset overview")
     st.dataframe(dataset.head())
+
+
+with tab4:
+    st.title("Author: Masoud Zaeem")
+    st.title("Email: massoudzaeem@gmail.com")
