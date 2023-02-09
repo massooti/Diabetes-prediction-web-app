@@ -3,3 +3,4 @@ venv2/
 venv4/
 .gitignore
 logs.log
+.ipynb_checkpoints
