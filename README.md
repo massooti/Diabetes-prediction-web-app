@@ -40,7 +40,7 @@ The model was trained using Pycaret on a diabetes dataset. The model uses Random
 the model uses XGBoost Classifer too.
 
 #### ScreenShot 
-![Alt text](image_url)
+![Diabetes Prediction Web Application](https://github.com/massooti/Diabetes-prediction-web-app/tree/master/image/web-app.png)
 
 
 #### Conclusion

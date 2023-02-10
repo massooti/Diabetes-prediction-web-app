@@ -1,3 +1,5 @@
+## This file is provided for easier readability of the code.
+# There is no difference in functionality compared to the code in the Jupyter notebook.
 from pycaret.utils import check_metric
 from pycaret.regression import *
 import pandas as pd
