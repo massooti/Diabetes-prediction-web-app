@@ -39,7 +39,7 @@ $ streamlit run app.py
 ```
 
 
-4- Build and run the Docker containers
+4- Or for easyier access you can build and run the Docker containers
 
 ```
 $ docker-compose up -d
