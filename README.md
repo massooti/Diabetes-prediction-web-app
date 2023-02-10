@@ -26,7 +26,20 @@ $ cd diabetes-prediction-web-app
 
 ```
 
-3- Build and run the Docker containers
+3- for using without docker
+
+```
+ - make your python virualenv
+ - pip install -r requirements.txt
+```
+
+* run the app using 
+```
+$ streamlit run app.py
+```
+
+
+4- Build and run the Docker containers
 
 ```
 $ docker-compose up -d
