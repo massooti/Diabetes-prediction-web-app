@@ -112,7 +112,7 @@ with tab2:
             'Based on feature values, your patient has diabets probability:' + str(prediction))
 
 with tab3:
-    dataset = pd.read_csv('diabetes.csv')
+    dataset = pd.read_csv('dataset/diabetes.csv')
     st.caption("features explanation")
     st.table(features_info())
     st.caption("dataset overview")
